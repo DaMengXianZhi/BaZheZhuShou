@@ -1,0 +1,5585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>745</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>745</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>霸者天芐助手v4.9.6（QQ：3965289963)</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>745</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tabJiChu">
+    <attribute name="title">
+     <string>基础配置</string>
+    </attribute>
+    <widget class="Line" name="line_10">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMaxJinChu">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号基础配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QCheckBox" name="checkBoxMaxZhenCe">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>侦测打怪</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxFuHuo">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动死亡复活</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxSuiJi">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>125</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动买随机</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxZhuangBei">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>125</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动穿装备</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxChongLian">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动掉线重连</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxMoLongBaoZang">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>150</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动魔龙宝藏</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxShiJieBoss">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>180</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动世界BOSS</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHuangJinShu">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>210</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动黄金树</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHangHuiShiLian">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>240</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动行会试炼</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxEnable">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>大号</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxId">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMaxName">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxFenJieDouLi">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>150</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>分解斗笠</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxFenJieHuDun">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>180</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>分解护盾</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxFenJieBaGua">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>210</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>分解八卦</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxFenJieYouMing">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>240</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>分解幽冥</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHangHuiMode">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动行会模式</string>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeEditMaxStart">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>90</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>90</y>
+        <width>20</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> -</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeEditMaxEnd">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>90</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXiuMian">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>90</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>休眠</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinJiChu">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号基础配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QCheckBox" name="checkBoxMinChongLian">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动掉线重连</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinFenJieBaGua">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>210</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>分解八卦</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinEnable">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>小号</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinZhenCe">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>侦测打怪</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHuangJinShu">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>210</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动黄金树</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinZhuangBei">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>210</y>
+        <width>125</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动穿装备</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinShiJieBoss">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>180</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动世界BOSS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMinName">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinMoLongBaoZang">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>150</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动魔龙宝藏</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinFenJieYouMing">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>240</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>分解幽冥</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinId">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinFenJieHuDun">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>180</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>分解护盾</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinFuHuo">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动死亡复活</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinFenJieDouLi">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>150</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>分解斗笠</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinSuiJi">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>125</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动买随机</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHangHuiMode">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动行会模式</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHangHuiShiLian">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>240</y>
+        <width>100</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>自动行会试炼</string>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeEditMinEnd">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>90</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTimeEdit" name="timeEditMinStart">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>90</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>90</y>
+        <width>20</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> -</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXiuMian">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>90</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>休眠</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabDengJi">
+    <attribute name="title">
+     <string>等级boss</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxMaxDengJi">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMaxDengJiList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDengJiMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDengJiMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDengJiMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDengJiMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDengJiMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDengJiMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDengJiMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDengJiMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDengJiTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinDengJi">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMinDengJiList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDengJiMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDengJiMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDengJiMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDengJiMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDengJiMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDengJiMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDengJiMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDengJiMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDengJiTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabDouLi">
+    <attribute name="title">
+     <string>斗笠boss</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxMaxDouLi">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMaxDouLiList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDouLiMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDouLiMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDouLiMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDouLiMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDouLiMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDouLiMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDouLiMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxDouLiMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxDouLiTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinDouLi">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMinDouLiList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDouLiMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDouLiMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDouLiMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDouLiMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDouLiMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDouLiMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDouLiMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinDouLiMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinDouLiTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabHuDun">
+    <attribute name="title">
+     <string>护盾boss</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxMaxHuDun">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMaxHuDunList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHuDunMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHuDunMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHuDunMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHuDunMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHuDunMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHuDunMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHuDunMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxHuDunMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxHuDunTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_3">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinHuDun">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMinHuDunList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHuDunMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHuDunMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHuDunMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHuDunMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHuDunMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHuDunMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHuDunMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinHuDunMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinHuDunTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabXingZuo">
+    <attribute name="title">
+     <string>星座boss</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxMaxXingZuo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXingZuoMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXingZuoMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXingZuoMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXingZuoMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXingZuoMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXingZuoMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXingZuoMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXingZuoMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXingZuoTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_4">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinXingZuo">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMinXingZuoList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXingZuoMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXingZuoMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXingZuoMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXingZuoMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXingZuoMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXingZuoMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXingZuoMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXingZuoMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXingZuoTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabJinShen">
+    <attribute name="title">
+     <string>金身boss</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxMaxJinShen">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMaxJinShenList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxJinShenMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxJinShenMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxJinShenMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxJinShenMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxJinShenMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxJinShenMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxJinShenMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxJinShenMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxJinShenTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_5">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinJinShen">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMinJinShenList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinJinShenMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinJinShenMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinJinShenMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinJinShenMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinJinShenMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinJinShenMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinJinShenMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinJinShenMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinJinShenTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabBaGua">
+    <attribute name="title">
+     <string>八卦</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxMaxBaGua">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMaxBaGuaList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxBaGuaMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxBaGuaMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxBaGuaList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxBaGuaList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxBaGuaMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxBaGuaList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxBaGuaMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxBaGuaList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxBaGuaMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_6">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinBaGua">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMinBaGuaList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinBaGuaMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinBaGuaMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinBaGuaList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinBaGuaList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinBaGuaMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinBaGuaList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinBaGuaMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinBaGuaList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinBaGuaMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabYouMing">
+    <attribute name="title">
+     <string>冥界-幽冥</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxMaxYouMing">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMaxYouMingList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxYouMingMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxYouMingMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxYouMingMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxYouMingMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxYouMingMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxYouMingMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxYouMingMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxYouMingMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxYouMingTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_37">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_38">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_39">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_7">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinYouMing">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMinYouMingList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinYouMingMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinYouMingMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinYouMingMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinYouMingMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinYouMingMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinYouMingMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinYouMingMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinYouMingMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinYouMingTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_40">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_41">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_42">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabXunLong">
+    <attribute name="title">
+     <string>冥界-驯龙</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxMaxXunLong">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMaxXunLongList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXunLongMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXunLongMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXunLongMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXunLongMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXunLongMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXunLongMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXunLongMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxXunLongMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxXunLongTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_43">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_44">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_45">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_8">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinXunLong">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMinXunLongList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXunLongMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXunLongMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXunLongMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXunLongMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXunLongMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXunLongMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXunLongMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinXunLongMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinXunLongTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_46">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_47">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_48">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabShenMo">
+    <attribute name="title">
+     <string>冥界-神魔</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBoxMaxShenMo">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>大号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMaxShenMoList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxShenMoMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxShenMoMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxShenMoMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxShenMoMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxShenMoMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxShenMoMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxShenMoMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMaxShenMoMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMaxShenMoTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_49">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_50">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_51">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="Line" name="line_9">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>5</width>
+       <height>240</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBoxMinShenMo">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>20</y>
+       <width>350</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>小号挂机地图配置</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+     <widget class="QComboBox" name="comboBoxMinShenMoList1">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinShenMoMap1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>20</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinShenMoMap5">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoList5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>140</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoList6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>170</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoList2">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>50</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinShenMoMap2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinShenMoMap6">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoList7">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>200</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoList3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>80</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinShenMoMap3">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>80</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinShenMoMap7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoList8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>230</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoList4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>110</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinShenMoMap4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>110</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBoxMinShenMoMap8">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>50</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>地图</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoTop1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>40</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoTop3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxMinShenMoTop2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>80</y>
+        <width>70</width>
+        <height>30</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_52">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶1：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_53">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶2：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_54">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>120</y>
+        <width>40</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>置顶3：</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButtonStop">
+   <property name="geometry">
+    <rect>
+     <x>332</x>
+     <y>350</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>停止</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTimeMessage">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>350</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonStart">
+   <property name="geometry">
+    <rect>
+     <x>232</x>
+     <y>350</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>启动</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelErrorMessage">
+   <property name="geometry">
+    <rect>
+     <x>614</x>
+     <y>350</y>
+     <width>121</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonBack">
+   <property name="geometry">
+    <rect>
+     <x>132</x>
+     <y>350</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonSave">
+   <property name="geometry">
+    <rect>
+     <x>432</x>
+     <y>350</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonClean">
+   <property name="geometry">
+    <rect>
+     <x>532</x>
+     <y>350</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清除设置</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
